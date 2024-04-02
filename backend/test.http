@@ -1,0 +1,33 @@
+### get all products
+
+GET http://localhost:8000/api/get-products
+
+### get one product
+
+GET http://localhost:8000/api/get-products/660c6447bcb08eecf40edd77
+
+### add products
+
+POST http://localhost:8000/api/get-products
+Content-Type: application/json
+
+{
+    "title":"this is from test.http",
+    "price":"1212122222220",
+    "imageUrl":"www.google.com",
+    "details":"this is details"
+}
+
+### Update Product
+PUT http://localhost:8000/api/get-products/660c6afd26f82053ef28b75c
+Content-Type: application/json
+
+{
+    "title":"this is updated title",
+    "price":"111",
+    "imageUrl":"www.google.com",
+    "details":"this is details"
+}
+
+### delete product
+DELETE http://localhost:8000/api/get-products/660c6b2426f82053ef28b761
